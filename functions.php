@@ -5,7 +5,7 @@ function group_files()
     wp_enqueue_style('mainstyle', get_theme_file_uri('/style.css'));
 }
 
-add_action(' wp_enqueue_scripts', 'mainstyle');
+add_action('wp_enqueue_scripts', 'group_files');
 
 function group_post_type()
 {
