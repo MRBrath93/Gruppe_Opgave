@@ -8,11 +8,9 @@ function group_post_type()
         'public' => true,
         'labels' => array(
             'name' => 'cars',
-
         )
 
     ));
 }
 
-
-add_action('init', '')
+add_action('init', 'group_post_type');
