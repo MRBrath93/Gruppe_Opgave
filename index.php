@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+$car = new WP_Query(array(
+    "post_type" => "car"
+));
 
-<body>
-    <h1>Hej</h1>
-</body>
+while ($car->have_posts()) {
+    $car->the_post(); ?>
+    <h2><?php
+        the_title();
+        ?></h2>
+<?php
 
-</html>
+}
+?>
