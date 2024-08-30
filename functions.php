@@ -13,3 +13,6 @@ function group_post_type()
 
     ));
 }
+
+
+add_action('init', '')
