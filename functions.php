@@ -1,5 +1,12 @@
 <?php
 
+function group_files()
+{
+    wp_enqueue_style('mainstyle', get_theme_file_uri('/style.css'));
+}
+
+add_action(' wp_enqueue_scripts', 'mainstyle');
+
 function group_post_type()
 {
     register_post_type('car', array(
