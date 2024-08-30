@@ -5,7 +5,7 @@ while (have_posts()) {
     <h1><?php
         the_title();
         ?></h1>
-    <img src="<?php the_post_thumbnail_url() ?>" alt="">
+    <img class="carImage" src="<?php the_post_thumbnail_url() ?>" alt="">
     <p><?php
         the_content();
         ?></p>
