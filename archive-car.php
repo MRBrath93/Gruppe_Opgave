@@ -10,7 +10,6 @@ while (have_posts()) {
         the_content();
         ?></p>
 
-
 <?php
 }
 ?>
